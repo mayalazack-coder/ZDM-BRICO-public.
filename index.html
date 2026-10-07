@@ -3,42 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta name="description" content="ZDM Brico - Maintenance bâtiment, plomberie, électricité, hydraulique, piscine, syndic, formations et devis en RDC.">
-
-<title>ZDM Brico | Site officiel</title>
+<meta name="description" content="ZDM Brico - Maintenance bâtiment, syndic, plomberie, électricité, hydraulique, piscine, assainissement, formations et devis.">
+<title>ZDM Brico | Maintenance bâtiment & syndic</title>
 
 <style>
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
-}
-
-html{
   scroll-behavior:smooth;
 }
 
 body{
   font-family:Arial,Helvetica,sans-serif;
-  background:#f4f6f8;
-  color:#14213d;
+  background:#f5f7fa;
+  color:#17202a;
   line-height:1.6;
 }
 
 header{
+  background:#111827;
+  color:white;
+  padding:18px 6%;
   position:sticky;
   top:0;
   z-index:1000;
-  background:#062b5c;
-  color:white;
-  box-shadow:0 3px 15px #0004;
 }
 
-.navbar{
+.nav{
   max-width:1200px;
   margin:auto;
-  padding:15px 20px;
   display:flex;
   justify-content:space-between;
   align-items:center;
@@ -46,52 +40,778 @@ header{
 }
 
 .logo{
-  font-size:28px;
-  font-weight:900;
-  white-space:nowrap;
-}
-
-.logo span{
-  color:#ff7900;
-}
-
-nav{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:15px;
+  font-size:25px;
+  font-weight:bold;
+  color:#f5c400;
 }
 
 nav a{
   color:white;
   text-decoration:none;
+  margin-left:18px;
   font-weight:bold;
-  font-size:14px;
 }
 
 nav a:hover{
-  color:#ff9900;
+  color:#f5c400;
 }
 
 .hero{
-  min-height:620px;
+  min-height:560px;
   display:flex;
   align-items:center;
-  justify-content:center;
-  text-align:center;
+  padding:70px 6%;
   color:white;
-  padding:80px 20px;
   background:
-  linear-gradient(#062b5cdd,#062b5cdd),
-  url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=85")
+  linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+  url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80")
   center/cover;
 }
 
 .hero-content{
-  max-width:900px;
+  max-width:750px;
 }
 
 .hero h1{
-  font-size:58px;
-  line-height:1.1;
- 
+  font-size:48px;
+  margin-bottom:20px;
+}
+
+.hero h1 span{
+  color:#f5c400;
+}
+
+.hero p{
+  font-size:20px;
+  margin-bottom:30px;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 24px;
+  border-radius:8px;
+  background:#f5c400;
+  color:#111827;
+  text-decoration:none;
+  font-weight:bold;
+  margin:5px;
+}
+
+.btn-dark{
+  background:#111827;
+  color:white;
+}
+
+section{
+  padding:70px 6%;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.section-title h2{
+  font-size:34px;
+  margin-bottom:10px;
+}
+
+.section-title p{
+  color:#667085;
+}
+
+.about{
+  background:white;
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.card{
+  background:white;
+  padding:28px;
+  border-radius:14px;
+  box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.card h3{
+  margin-bottom:12px;
+  color:#111827;
+}
+
+.icon{
+  font-size:38px;
+  margin-bottom:12px;
+}
+
+.services{
+  background:#f5f7fa;
+}
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.service{
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 4px 15px rgba(0,0,0,.07);
+}
+
+.service h3{
+  margin:10px 0;
+}
+
+.gallery{
+  background:white;
+}
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+}
+
+.gallery img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:12px;
+}
+
+.tarifs{
+  background:#111827;
+  color:white;
+}
+
+.price-box{
+  max-width:650px;
+  margin:auto;
+  text-align:center;
+  padding:40px;
+  background:#1f2937;
+  border-radius:18px;
+  border:2px solid #f5c400;
+}
+
+.price{
+  font-size:50px;
+  font-weight:bold;
+  color:#f5c400;
+  margin:15px 0;
+}
+
+.price-box ul{
+  list-style:none;
+  text-align:left;
+  margin:25px auto;
+  max-width:400px;
+}
+
+.price-box li{
+  margin:10px 0;
+}
+
+.forms{
+  background:#f5f7fa;
+}
+
+.form-box{
+  max-width:700px;
+  margin:auto;
+  background:white;
+  padding:30px;
+  border-radius:15px;
+  box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+input,textarea,select{
+  width:100%;
+  padding:14px;
+  margin:8px 0 15px;
+  border:1px solid #d0d5dd;
+  border-radius:8px;
+  font-size:16px;
+}
+
+textarea{
+  min-height:130px;
+  resize:vertical;
+}
+
+button{
+  width:100%;
+  border:0;
+  padding:15px;
+  background:#f5c400;
+  color:#111827;
+  font-size:17px;
+  font-weight:bold;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.training{
+  background:white;
+}
+
+.training-grid,
+.jobs-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.job{
+  background:#f5f7fa;
+  padding:25px;
+  border-radius:12px;
+  border-left:5px solid #f5c400;
+}
+
+.contact{
+  background:#111827;
+  color:white;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:30px;
+}
+
+.contact a{
+  color:#f5c400;
+}
+
+footer{
+  background:#080d16;
+  color:#bbb;
+  text-align:center;
+  padding:25px;
+}
+
+.whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  background:#25D366;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  font-size:30px;
+  box-shadow:0 4px 15px rgba(0,0,0,.3);
+  z-index:2000;
+}
+
+@media(max-width:900px){
+  .service-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .gallery-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .about-grid,
+  .training-grid,
+  .jobs-grid,
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero h1{
+    font-size:38px;
+  }
+
+  nav{
+    display:none;
+  }
+}
+
+@media(max-width:600px){
+  section{
+    padding:50px 5%;
+  }
+
+  .hero{
+    min-height:500px;
+  }
+
+  .hero h1{
+    font-size:32px;
+  }
+
+  .hero p{
+    font-size:17px;
+  }
+
+  .service-grid,
+  .gallery-grid{
+    grid-template-columns:1fr;
+  }
+
+  .gallery img{
+    height:230px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="nav">
+
+<div class="logo">ZDM BRICO</div>
+
+<nav>
+<a href="#accueil">Accueil</a>
+<a href="#services">Services</a>
+<a href="#realisations">Réalisations</a>
+<a href="#tarifs">Tarifs</a>
+<a href="#formation">Formation</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</div>
+</header>
+
+<section class="hero" id="accueil">
+<div class="hero-content">
+
+<h1>
+ZDM Brico : <span>zèle dans le travail</span>
+</h1>
+
+<p>
+Maintenance bâtiment, syndic, plomberie, électricité,
+hydraulique, piscine, assainissement et travaux généraux.
+</p>
+
+<a class="btn" href="#devis">Demander un devis</a>
+
+<a class="btn btn-dark"
+href="https://mayalazack-coder.github.io/potential-octo-fortnight/">
+Demander une intervention
+</a>
+
+</div>
+</section>
+
+<section class="about">
+<div class="container">
+
+<div class="section-title">
+<h2>À propos de ZDM Brico</h2>
+<p>Des solutions professionnelles pour vos bâtiments.</p>
+</div>
+
+<div class="about-grid">
+
+<div class="card">
+<div class="icon">🔧</div>
+<h3>Maîtrise</h3>
+<p>
+Nous travaillons avec sérieux et cherchons des solutions
+adaptées à chaque problème technique.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🏗️</div>
+<h3>Durabilité</h3>
+<p>
+Notre objectif est de réaliser des ouvrages fiables,
+durables et faciles à entretenir.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">⭐</div>
+<h3>Zèle dans le travail</h3>
+<p>
+Nous accordons de l'importance à chaque détail afin
+d'obtenir un résultat professionnel.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="services" id="services">
+<div class="container">
+
+<div class="section-title">
+<h2>Nos services</h2>
+<p>Des services techniques pour particuliers et professionnels.</p>
+</div>
+
+<div class="service-grid">
+
+<div class="service">
+<div class="icon">🚿</div>
+<h3>Plomberie</h3>
+<p>Installation, réparation, fuite, évacuation et équipements sanitaires.</p>
+</div>
+
+<div class="service">
+<div class="icon">⚡</div>
+<h3>Électricité</h3>
+<p>Installation, maintenance, dépannage et tableaux électriques.</p>
+</div>
+
+<div class="service">
+<div class="icon">💧</div>
+<h3>Hydraulique</h3>
+<p>Pompes, réservoirs, pression, réseaux d'eau et installations hydrauliques.</p>
+</div>
+
+<div class="service">
+<div class="icon">🏊</div>
+<h3>Piscine</h3>
+<p>Installation, plomberie piscine, pompage et maintenance.</p>
+</div>
+
+<div class="service">
+<div class="icon">🏢</div>
+<h3>Maintenance bâtiment</h3>
+<p>Entretien préventif et correctif des bâtiments.</p>
+</div>
+
+<div class="service">
+<div class="icon">📋</div>
+<h3>Syndic</h3>
+<p>Suivi technique et maintenance des immeubles et résidences.</p>
+</div>
+
+<div class="service">
+<div class="icon">🧱</div>
+<h3>Travaux généraux</h3>
+<p>Petits travaux, réparations et amélioration des bâtiments.</p>
+</div>
+
+<div class="service">
+<div class="icon">♻️</div>
+<h3>Assainissement</h3>
+<p>Évacuation, fosse septique, drainage et entretien des réseaux.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="gallery" id="realisations">
+<div class="container">
+
+<div class="section-title">
+<h2>Nos réalisations</h2>
+<p>Quelques exemples de travaux et chantiers.</p>
+</div>
+
+<div class="gallery-grid">
+
+<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80" alt="Travaux bâtiment">
+
+<img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=800&q=80" alt="Outils de chantier">
+
+<img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=800&q=80" alt="Travaux plomberie">
+
+<img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=800&q=80" alt="Travaux électriques">
+
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Chantier">
+
+<img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80" alt="Construction">
+
+<img src="https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=800&q=80" alt="Plomberie">
+
+<img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="Technicien">
+
+</div>
+</div>
+</section>
+
+<section class="tarifs" id="tarifs">
+<div class="container">
+
+<div class="section-title">
+<h2>Abonnement maintenance</h2>
+<p>Une solution pour garder votre bâtiment bien entretenu.</p>
+</div>
+
+<div class="price-box">
+
+<h3>À partir de</h3>
+
+<div class="price">50 $ / mois</div>
+
+<p>Selon le contrat et les besoins du bâtiment.</p>
+
+<ul>
+<li>✅ Maintenance préventive</li>
+<li>✅ Intervention technique</li>
+<li>✅ Suivi de l'état du bâtiment</li>
+<li>✅ Conseils techniques</li>
+<li>✅ Vidange fosse septique selon contrat</li>
+<li>✅ Autres avantages et cadeaux selon contrat</li>
+</ul>
+
+<a class="btn" href="#devis">Demander une offre</a>
+
+</div>
+</div>
+</section>
+
+<section class="forms" id="devis">
+<div class="container">
+
+<div class="section-title">
+<h2>Demander un devis</h2>
+<p>Décrivez votre besoin et contactez directement ZDM Brico.</p>
+</div>
+
+<div class="form-box">
+
+<form onsubmit="envoyerDevis(event)">
+
+<label>Nom</label>
+<input id="nom" type="text" placeholder="Votre nom" required>
+
+<label>Téléphone</label>
+<input id="telephone" type="tel" placeholder="Votre numéro" required>
+
+<label>Service demandé</label>
+
+<select id="service" required>
+<option value="">Choisir un service</option>
+<option>Plomberie</option>
+<option>Électricité</option>
+<option>Hydraulique</option>
+<option>Piscine</option>
+<option>Maintenance bâtiment</option>
+<option>Syndic</option>
+<option>Assainissement</option>
+<option>Travaux généraux</option>
+</select>
+
+<label>Votre besoin</label>
+
+<textarea id="message" placeholder="Décrivez votre projet ou votre problème..." required></textarea>
+
+<button type="submit">
+Envoyer la demande sur WhatsApp
+</button>
+
+</form>
+
+</div>
+</div>
+</section>
+
+<section class="training" id="formation">
+<div class="container">
+
+<div class="section-title">
+<h2>Formations</h2>
+<p>Développez vos compétences techniques avec ZDM Brico.</p>
+</div>
+
+<div class="training-grid">
+
+<div class="card">
+<div class="icon">🚿</div>
+<h3>Formation plomberie</h3>
+<p>
+Bases de plomberie, installation sanitaire,
+réseaux d'eau, évacuation et dépannage.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">⚡</div>
+<h3>Formation électricité</h3>
+<p>
+Notions électriques, câblage, protections,
+installation et sécurité.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">💧</div>
+<h3>Formation hydraulique</h3>
+<p>
+Pompes, pression, débit, réservoirs,
+réseaux hydrauliques et maintenance.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<div class="section-title">
+<h2>Offres d'emploi</h2>
+<p>ZDM Brico recherche des personnes sérieuses et motivées.</p>
+</div>
+
+<div class="jobs-grid">
+
+<div class="job">
+<h3>👷 Technicien plomberie</h3>
+<p>
+Compétences en plomberie, installation et dépannage.
+</p>
+</div>
+
+<div class="job">
+<h3>⚡ Technicien électricité</h3>
+<p>
+Compétences en installation et maintenance électrique.
+</p>
+</div>
+
+<div class="job">
+<h3>🏗️ Technicien bâtiment</h3>
+<p>
+Compétences polyvalentes en maintenance et travaux généraux.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="container">
+
+<div class="section-title">
+<h2>Contactez ZDM Brico</h2>
+<p>Nous sommes disponibles pour vos projets et besoins techniques.</p>
+</div>
+
+<div class="contact-grid">
+
+<div>
+<h3>📞 Téléphone</h3>
+<p>
+<a href="tel:+243895894251">
++243 895 894 251
+</a>
+</p>
+
+<br>
+
+<h3>💬 WhatsApp</h3>
+<p>
+<a href="https://wa.me/243895894251">
+Écrire sur WhatsApp
+</a>
+</p>
+</div>
+
+<div>
+<h3>📧 Email</h3>
+<p>
+<a href="mailto:ZDMBRICO@gmail.com">
+ZDMBRICO@gmail.com
+</a>
+</p>
+
+<br>
+
+<h3>📍 Adresse</h3>
+<p>Matete Anunga 52B</p>
+<p>Kinshasa, RDC</p>
+
+<br>
+
+<h3>▶️ YouTube</h3>
+<p>ZDM brico</p>
+</div>
+
+</div>
+
+<br><br>
+
+<div style="text-align:center;">
+<a class="btn" href="https://mayalazack-coder.github.io/potential-octo-fortnight/">
+Accéder au site de demande d'intervention
+</a>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>
+© 2026 ZDM Brico — Zèle dans le travail, durabilité de nos ouvrages,
+maîtrise de chaque détail.
+</p>
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/243895894251"
+target="_blank"
+aria-label="WhatsApp">
+💬
+</a>
+
+<script>
+
+function envoyerDevis(event){
+
+event.preventDefault();
+
+const nom =
+document.getElementById("nom").value;
+
+const telephone =
+document.getElementById("telephone").value;
+
+const service =
+document.getElementById("service").value;
+
+const message =
+document.getElementById("message").value;
+
+const texte =
+"Bonjour ZDM Brico.%0A%0A" +
+"Je souhaite demander un devis.%0A%0A" +
+"Nom : " + encodeURIComponent(nom) +
+"%0ATéléphone : " + encodeURIComponent(telephone) +
+"%0AService : " + encodeURIComponent(service) +
+"%0ABesoin : " + encodeURIComponent(message);
+
+window.open(
+"https://wa.me/243895894251?text=" + texte,
+"_blank"
+);
+
+}
+
+</script>
+
+</body>
+  </html>
